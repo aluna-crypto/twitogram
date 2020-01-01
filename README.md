@@ -11,7 +11,6 @@ In this version, we forward forward tweets from:
 
 Make sure you have installed:
  - Node.js, version 12 or above
- - MongoDB, and it's running before you start your application
 
 # Developing
 
@@ -28,3 +27,17 @@ In the terminal, run:
 $ npm install
 $ npm run develop
 ````
+# Next Steps
+
+ We started developing an HTTP Service using Express and MongoDB in order to
+ keep track of which rooms the bot was added and removed from.
+
+
+ With MongoDB we will also be able to keep track of the tweets and be able
+ to provide other information, such as:
+
+ - When was the last flip
+ - When was the last time X amount of contracts were liquidated
+
+ We also plan to allow users to setup custom alerts and receive them based
+ on their own configuation
