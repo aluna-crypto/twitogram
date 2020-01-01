@@ -1,6 +1,6 @@
 # TwiToGram
 
-Fetches Tweets from a User's Timeline, and forwards it to Telegram.
+Fetches Tweets from a User's Timeline and forwards it to Telegram.
 
 In this version, we forward forward tweets from:
  - twitter.com/MexFundingAlert only for funding flips
@@ -24,5 +24,7 @@ Add your API credentials in ./.env:
 Add ROOM_ID in ./index.js to define the chat or group numeric id to forward tweets to.
 
 In the terminal, run:
+````bash
 $ npm install
 $ npm run develop
+````
