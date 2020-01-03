@@ -23,15 +23,15 @@ stream.on('tweet', function (tweet, err) {
   const ROOM_ID = insert_room_id_here
   const message = `${tweet.text} - (Forwarded from twitter.com/${tweet.user.screen_name}/status/${tweet.id_str})`
 
-  if (tweet.text.includes('flipped')) {
+  if (tweet.text.includes('flipped')  && tweet.retweeted_status == undefined) {
     bot.telegram.sendMessage(ROOM_ID, message);
   }
 
-  if (tweet.text.includes('💯💯💯💯💯')) {
+  if (tweet.text.includes('💯💯💯💯💯') && tweet.retweeted_status == undefined) {
     bot.telegram.sendMessage(ROOM_ID, message);
   }
 
-  if (tweet.text.includes('Okcoin')) {
+  if (tweet.text.includes('Okcoin') && tweet.retweeted_status == undefined) {
     const str = `${tweet.text}`
     const contracts = str.split('of');
     const size = contracts[1].split(' ');
