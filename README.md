@@ -2,7 +2,7 @@
 
 Fetches Tweets from a User's Timeline and forwards it to Telegram.
 
-In this version, we forward forward tweets from:
+In this version, we forward tweets from:
  - twitter.com/MexFundingAlert only for funding flips
  - twitter.com/BXRekt only for liquidations >500k contracts
  - twitter.com/whalecalls only for liquidations >1000 contracts
